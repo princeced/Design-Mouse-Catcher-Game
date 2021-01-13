@@ -1,0 +1,134 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.start-container {
+    display: block;
+    position: relative;
+    background-color: black;
+    height: 350px;
+    padding: 60px;
+    margin-top: 79px;
+    width: 500px;
+    text-align: center;
+}
+
+#moleimage {
+    position: relative;
+    animation-name: rat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rat {
+    0% {
+        top: -100px;
+    }
+    50% {
+        top: -100px;
+    }
+    100% {
+        top: -40px;
+    }
+}
+
+#letsstartbtn {
+    position: absolute;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 25px;
+    left: 250px;
+    bottom: 40px;
+}
+
+#menubtn {
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 50px;
+}
+
+.score-container {
+    margin-top: 20px;
+}
+
+.score-container>p {
+    margin-top: 20px;
+}
+
+.score-container>progress {
+    margin-top: 20px;
+}
+
+.game-container {
+    margin-top: 20px;
+}
+
+.result-container {
+    display: none;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+}
+
+.result-container>h1 {
+    font-weight: 200;
+    color: white;
+    margin-top: 50px;
+}
+
+#gcr1,
+#gcr2,
+#gcr3,
+#gcr4,
+#gcr5,
+#gcr6,
+#gcr7,
+#gcr8,
+#gcr9 {
+    display: inline-flex;
+    height: 150px;
+    width: 150px;
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 20px solid #d68e1a;
+    margin: 30px;
+    border-radius: 51px 450px 51px 350px;
+}
+
+.ratimage {
+    height: inherit;
+    width: inherit;
+    position: relative;
+    animation-name: rat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+#ratimage1,
+#ratimage2,
+#ratimage3,
+#ratimage4,
+#ratimage5,
+#ratimage6,
+#ratimage7,
+#ratimage8,
+#ratimage9 {
+    display: none;
+}
